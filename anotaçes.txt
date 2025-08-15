@@ -1,0 +1,3 @@
+popular o database com dados mockados do fixtures
+python manage.py loaddata mock_data
+

@@ -1,0 +1,118 @@
+[
+  {
+    "model": "app.User",
+    "pk": 2,
+    "fields": {
+      "name": "Carlos Passenger",
+      "email": "carlos@example.com",
+      "password": "pbkdf2_sha256$600000$examplehash",
+      "role": "passenger",
+      "image": null,
+      "telephone": "+5511988888888",
+      "created_at": "2025-08-05T09:30:00Z",
+      "updated_at": "2025-08-05T09:30:00Z"
+    }
+  },
+  {
+    "model": "app.User",
+    "pk": 3,
+    "fields": {
+      "name": "João Driver",
+      "email": "joao@example.com",
+      "password": "pbkdf2_sha256$600000$examplehash",
+      "role": "driver",
+      "image": null,
+      "telephone": "+5511977777777",
+      "created_at": "2025-08-04T08:00:00Z",
+      "updated_at": "2025-08-04T08:00:00Z"
+    }
+  },
+  {
+    "model": "app.Driver",
+    "pk": 1,
+    "fields": {
+      "user": 3,
+      "car_model": "Toyota Corolla",
+      "car_plate": "ABC-1234",
+      "car_color": "Prata",
+      "license_number": "LIC123456",
+      "rating": 5,
+      "completed_rides": 42,
+      "status": "available",
+      "created_at": "2025-08-04T08:10:00Z",
+      "updated_at": "2025-08-04T08:10:00Z"
+    }
+  },
+  {
+    "model": "app.Coord",
+    "pk": 1,
+    "fields": {
+      "lat": -23.55052,
+      "lng": -46.633308
+    }
+  },
+  {
+    "model": "app.Coord",
+    "pk": 2,
+    "fields": {
+      "lat": -23.556,
+      "lng": -46.650
+    }
+  },
+  {
+    "model": "app.Place",
+    "pk": 1,
+    "fields": {
+      "name": "Avenida Paulista",
+      "location": 1
+    }
+  },
+  {
+    "model": "app.Place",
+    "pk": 2,
+    "fields": {
+      "name": "Praça da Sé",
+      "location": 2
+    }
+  },
+  {
+    "model": "app.Trip",
+    "pk": 1,
+    "fields": {
+      "token": "11111111-1111-1111-1111-111111111111",
+      "name": "Viagem Paulista-Sé",
+      "source": 1,
+      "destination": 2,
+      "distance": 5.2,
+      "duration": 15.5,
+      "freight": 25.0,
+      "directions": {"steps": ["Saia da Paulista", "Siga até a Sé"]},
+      "status": "completed",
+      "passenger": 2,
+      "driver": 1,
+      "created_at": "2025-08-05T09:35:00Z",
+      "updated_at": "2025-08-05T09:50:00Z"
+    }
+  },
+  {
+    "model": "app.TripCancellation",
+    "pk": 1,
+    "fields": {
+      "trip": 1,
+      "cancelled_by": "passenger",
+      "reason": "Mudança de planos",
+      "comment": "Não preciso mais da corrida",
+      "user": 2,
+      "created_at": "2025-08-05T09:40:00Z"
+    }
+  },
+  {
+    "model": "app.Point",
+    "pk": 1,
+    "fields": {
+      "driver": 1,
+      "location": 1,
+      "created_at": "2025-08-04T08:15:00Z"
+    }
+  }
+]
