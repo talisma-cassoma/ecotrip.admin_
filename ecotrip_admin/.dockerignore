@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+*.pyc
+__pycache__/
+venv/
+env/
+node_modules/
+media/
+static_collected/
+staticfiles/
+docker-compose.yml
+Dockerfile
