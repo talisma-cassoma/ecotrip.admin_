@@ -1,3 +1,8 @@
+ativar o virtual env
+pipenv shell
+
 popular o database com dados mockados do fixtures
 python manage.py loaddata mock_data
 
+rodar o servidor
+python manage.py runserver 0.0.0.0:8080
