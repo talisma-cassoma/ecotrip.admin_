@@ -1,0 +1,26 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Virtual environment
+.env/
+venv/
+env/
+
+# Database files
+db.sqlite3
+
+# Log files
+*.log
+
+# Sensitive configuration files
+local_settings.py
+
+# Media and static files
+media/
+static/
+
+# Operating system and IDE specific files
+.DS_Store
+Thumbs.db
+.idea/
