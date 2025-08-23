@@ -138,13 +138,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 UNFOLD = {
     "SITE_TITLE": "Ecotrip",         # título na aba do navegador
-    "SITE_HEADER": "Dashboard Admin",   # cabeçalho
+    "SITE_HEADER": "Ecotrip Dashboard",   # cabeçalho
     "SITE_ICON": None,                  # favicon (podes colocar um path)
     "SITE_LOGO": None,                  # logotipo no header/sidebar
-    "SITE_SYMBOL": "🚀",                # emoji de fallback
+    "SITE_SYMBOL": "settings",                # emoji de fallback
     #"DASHBOARD_CALLBACK": "app.dashboard.get_widgets",  # função para dashboard
+    "LAYOUT": "boxed", 
     "SHOW_HISTORY": True,               # mostra histórico no changelist
     "SHOW_VIEW_ON_SITE": True,          # mostra "ver no site"
     "DARK_MODE": True,                  # força dark mode
-    "SHOW_LANGUAGES": True,
+    "SHOW_LANGUAGES": True
 }
